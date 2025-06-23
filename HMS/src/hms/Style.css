@@ -1,0 +1,104 @@
+.root {
+    -fx-background-color: #f4f9fd;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.label {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.error {
+    -fx-text-fill: red;
+    -fx-font-size: 10px;
+}
+
+.login {
+    -fx-pref-width: 300px;
+    -fx-padding: 8px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #3498db;
+    -fx-background-color: #ecf0f1;
+    -fx-font-size: 14px;
+}
+
+.signup {
+    -fx-pref-width: 300px;
+    -fx-padding: 8px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #3498db;
+    -fx-background-color: #ecf0f1;
+    -fx-font-size: 14px;
+}
+
+.update {
+    -fx-pref-width: 300px;
+    -fx-padding: 8px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #3498db;
+    -fx-background-color: #ecf0f1;
+    -fx-font-size: 14px;
+}
+
+.patient,datepicker {
+    -fx-pref-width: 300px;
+    -fx-padding: 8px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #3498db;
+    -fx-background-color: #ecf0f1;
+    -fx-font-size: 14px;
+}
+
+.time {
+    -fx-pref-width: 149px;
+    -fx-padding: 8px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #3498db;
+    -fx-background-color: #ecf0f1;
+    -fx-font-size: 14px;
+}
+
+.button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-padding: 8 16 8 16;
+}
+
+.button:hover {
+    -fx-background-color: #2980b9;
+}
+
+.logout:hover {
+    -fx-background-color: red;
+}
+
+#lblError {
+    -fx-text-fill: red;
+    -fx-font-size: 14px;
+}
+
+.form-title {
+    -fx-font-size: 24px;
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+}
+
+.table-view {
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-background-color: white;
+}
+
+.table-column {
+    -fx-alignment: CENTER-LEFT;
+    -fx-font-size: 14px;
+}
