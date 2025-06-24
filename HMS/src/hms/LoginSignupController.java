@@ -52,7 +52,7 @@ public class LoginSignupController implements Initializable {
         String password = pfPassword.getText().trim();
 
         if (username.isEmpty() || password.isEmpty()) {
-            lblError.setText("⚠️ Username and Password must not be empty.");
+            lblError.setText("Username and Password must not be empty.");
             return;
         }
 
@@ -115,16 +115,16 @@ public class LoginSignupController implements Initializable {
                             stage.setTitle(title);
                             stage.show();
                         } else {
-                            lblError.setText("❌ Unknown role.");
+                            lblError.setText("Unknown role.");
                         }
 
                     } else {
-                        lblError.setText("❌ Invalid username or password.");
+                        lblError.setText("Invalid username or password.");
                     }
                 }
             }
         } catch (Exception e) {
-            lblError.setText("❌ Login failed: " + e.getMessage());
+            lblError.setText("Login failed: " + e.getMessage());
             e.printStackTrace();
         }
     }

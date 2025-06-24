@@ -37,6 +37,8 @@ public class ViewAppointmentsController implements Initializable {
     private Button backBtn;
 
     private String username;
+    @FXML
+    private TableColumn<PatAppointment, String> colContact;
 
     /**
      * Initializes the controller class.
@@ -44,6 +46,7 @@ public class ViewAppointmentsController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         colDoctor.setCellValueFactory(new PropertyValueFactory<PatAppointment, String>("doctor"));
+        colContact.setCellValueFactory(new PropertyValueFactory<PatAppointment, String>("contact"));
         colDate.setCellValueFactory(new PropertyValueFactory<PatAppointment, String>("date"));
         colTime.setCellValueFactory(new PropertyValueFactory<PatAppointment, String>("time"));
         colStatus.setCellValueFactory(new PropertyValueFactory<PatAppointment, String>("status"));

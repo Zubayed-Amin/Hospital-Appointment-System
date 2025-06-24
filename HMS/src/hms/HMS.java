@@ -18,10 +18,10 @@ public class HMS extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("LoginSignup.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("PatientDashboard.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.setTitle("Hospital Appointment System");
+        stage.setTitle("Appointment Dashboard");
         stage.show();
     }
 

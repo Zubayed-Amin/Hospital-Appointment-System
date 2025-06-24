@@ -22,10 +22,10 @@ public class DBConnection {
 
             // Establish connection
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital_appointment_system", "root", "");
-            System.out.println("✅ Database Connected");
+            System.out.println("Database Connected");
 
         } catch (ClassNotFoundException | SQLException e) {
-            System.out.println("❌ Connection Failed: " + e.getMessage());
+            System.out.println("Connection Failed: " + e.getMessage());
         }
 
         return connection;

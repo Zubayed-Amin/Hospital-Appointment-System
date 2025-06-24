@@ -28,19 +28,17 @@ public class SignUpController implements Initializable {
     @FXML
     private PasswordField pfConfirmPassword;
     @FXML
-    private ComboBox<String> choiceRole;
-    @FXML
     private Label lblMsg;
     @FXML
     private Button btnSignUp;
+    @FXML
+    private TextField tfDept;
+    @FXML
+    private TextArea taDesc;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // Add role options
-        choiceRole.getItems().addAll("Doctor", "Patient");
-
-        // Set default prompt text without selecting any value
-        choiceRole.setPromptText("Select Role");
+        
     }
 
     
@@ -49,29 +47,31 @@ public class SignUpController implements Initializable {
         {
         String fullname = tfFullname.getText();
         String username = tfUsername.getText();
+        String department = tfDept.getText();
+        String description = taDesc.getText();
         String password = pfPassword.getText();
         String contact = tfContact.getText();
         String confirmPassword = pfConfirmPassword.getText();
-        String role = choiceRole.getValue();
 
         if (!password.equals(confirmPassword)) {
             lblMsg.setText("Passwords do not match!");
             return;
         }
         
-        if (fullname.isEmpty() || username.isEmpty() || contact.isEmpty() || password.isEmpty() || role == null) {
+        if (fullname.isEmpty() || username.isEmpty() || department.isEmpty() || description.isEmpty() || contact.isEmpty() || password.isEmpty()) {
             lblMsg.setText("All fields are required.");
             return;
         }
 
         try (Connection conn = DBConnection.getConnection()) {
-                String sql = "INSERT INTO users (fullname, username, password, contact, role) VALUES (?, ?, ?, ?, ?)";
+                String sql = "INSERT INTO users (fullname, username, department, description, password, contact) VALUES (?, ?, ?, ?, ?, ?)";
                 PreparedStatement stmt = conn.prepareStatement(sql);
                 stmt.setString(1, fullname);
                 stmt.setString(2, username);
-                stmt.setString(3, password);
-                stmt.setString(4, contact);
-                stmt.setString(5, role);
+                stmt.setString(3, department);
+                stmt.setString(4, description);
+                stmt.setString(5, password);
+                stmt.setString(6, contact);
                 
                 int rows = stmt.executeUpdate();
                 if (rows > 0) {

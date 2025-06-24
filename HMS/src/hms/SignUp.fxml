@@ -2,9 +2,9 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
@@ -20,10 +20,11 @@
 
                 <TextField fx:id="tfFullname" maxWidth="300" promptText="Full Name" styleClass="signup" />
                 <TextField fx:id="tfUsername" maxWidth="300" promptText="Username" styleClass="signup" />
+            <TextField fx:id="tfDept" maxWidth="300" promptText="Department" styleClass="signup" />
+            <TextArea fx:id="taDesc" prefHeight="120.0" prefWidth="200.0" promptText="Doctor details" styleClass="signup" />
             <TextField fx:id="tfContact" maxWidth="300" promptText="Contact" styleClass="signup" />
                 <PasswordField fx:id="pfPassword" maxWidth="300" promptText="Password" styleClass="signup" />
                 <PasswordField fx:id="pfConfirmPassword" maxWidth="300" promptText="Confirm Password" styleClass="signup" />
-            <ComboBox fx:id="choiceRole" prefWidth="300.0" promptText="Select Role" styleClass="signup" />
 
                 <Button fx:id="btnSignUp" onAction="#handleSignUp" prefWidth="300" text="Sign Up" />
 

@@ -108,7 +108,6 @@ public void initialize(URL url, ResourceBundle rb) {
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
         stage.setTitle("Login Form");
-         stage.setTitle("Login Form");
         stage.show();
         ((Stage) logoutBtn.getScene().getWindow()).close();
     }

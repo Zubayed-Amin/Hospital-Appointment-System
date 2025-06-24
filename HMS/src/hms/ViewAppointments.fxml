@@ -16,10 +16,11 @@
 
             <TableView fx:id="appointmentTable" prefHeight="400.0">
                 <columns>
-                    <TableColumn fx:id="colDoctor" prefWidth="194.66665077209473" text="Doctor" />
-                    <TableColumn fx:id="colDate" prefWidth="158.6666717529297" text="Date" />
-                    <TableColumn fx:id="colTime" prefWidth="142.66659545898438" text="Time" />
-                    <TableColumn fx:id="colStatus" prefWidth="164.66668701171875" text="Status" />
+                    <TableColumn fx:id="colDoctor" prefWidth="144.66666221618652" text="Doctor" />
+               <TableColumn fx:id="colContact" prefWidth="147.3332977294922" text="Contact" />
+                    <TableColumn fx:id="colDate" prefWidth="122.0" text="Date" />
+                    <TableColumn fx:id="colTime" prefWidth="109.33340454101562" text="Time" />
+                    <TableColumn fx:id="colStatus" prefWidth="136.0" text="Status" />
                 </columns>
             </TableView>
          <HBox prefHeight="100.0" prefWidth="200.0" spacing="480.0">

@@ -54,8 +54,18 @@
     -fx-font-size: 14px;
 }
 
+.textarea {
+    -fx-pref-width: 300px;
+    -fx-padding: 8px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #3498db;
+    -fx-background-color: #ecf0f1;
+    -fx-font-size: 14px;
+}
+
 .time {
-    -fx-pref-width: 149px;
+    -fx-pref-width: 99px;
     -fx-padding: 8px;
     -fx-background-radius: 5px;
     -fx-border-radius: 5px;
